@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Cocina de Gustavo</title>
+    <link
+      rel="icon"
+      href="/miSitioWeb/assets/icons/LCG.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/index.html"
+        ><img
+          src="/miSitioWeb/assets/icons/LCG.ico"
+          alt="La cocina de gustavo"
+          width="50"
+          height="50"
+      /></a>
+      <span style="font-size: xx-large"><b>La Cocina de Gustavo</b></span>
+    </header>
+
+    <h2>Formulario de Registro</h2>
+
+    <form action="#">
+      <fieldset>
+        <legend>Información Personal</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required /><br />
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" /><br />
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input
+          type="date"
+          id="fecha_nacimiento"
+          name="fecha_nacimiento"
+        /><br />
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" /><br />
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" /><br />
+
+        <label for="sitio_web">Sitio Web:</label>
+        <input type="url" id="sitio_web" name="sitio_web" /><br />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" /><br />
+
+        <label for="foto">Foto de Perfil:</label>
+        <input type="file" id="foto" name="foto" /><br />
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario"></textarea><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferencias</legend>
+
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="sexo_m" name="sexo" value="masculino" />
+        <label for="sexo_m">Masculino</label>
+        <input type="radio" id="sexo_f" name="sexo" value="femenino" />
+        <label for="sexo_f">Femenino</label><br />
+
+        <label for="intereses">Intereses:</label><br />
+        <input
+          type="checkbox"
+          id="interes1"
+          name="intereses"
+          value="deportes"
+        />
+        <label for="interes1">Deportes</label>
+        <input type="checkbox" id="interes2" name="intereses" value="musica" />
+        <label for="interes2">Música</label>
+        <input type="checkbox" id="interes3" name="intereses" value="lectura" />
+        <label for="interes3">Lectura</label><br />
+
+        <label for="nivel_estudios">Nivel de Estudios:</label>
+        <select id="nivel_estudios" name="nivel_estudios">
+          <option value="primaria">Primaria</option>
+          <option value="secundaria">Secundaria</option>
+          <option value="preparatoria">Preparatoria</option>
+          <option value="universidad">Universidad</option></select
+        ><br />
+      </fieldset>
+
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Limpiar" />
+
+      <!-- <input type="image" src="../assets/icons/submit.ico" alt="Submit" width="48" height="48">
+      <input type="image" src="../assets/icons/reset.ico" alt="Reset" width="48" height="48"> -->
+
+      <!-- <input type="image" src="../assets/icons/submit.ico" alt="Enviar">
+      <input type="image" src="../assets/icons/reset.ico" alt="Limpiar"> -->
+    </form>
+  </body>
+</html>
